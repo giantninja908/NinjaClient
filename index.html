@@ -1,0 +1,75 @@
+
+<html>
+ <head>
+	<link rel="shortcut icon" type="image/png" href="https://d30y9cdsu7xlg0.cloudfront.net/png/58616-200.png" />
+	<title>Hackerman Client</title>
+	 <meta charset="UTF-8">
+  <meta name="description" content="Unblock all of your needs for school">
+  <meta name="keywords" content="unblock, proxy, webshark, WebShark, WebShark2.0, Web Shark 2.0">
+  <meta name="author" content="Haxxormans">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+	
+	iframe {
+	background: white;
+	}
+body {
+    overflow: hidden;
+  }
+ </style>
+ </head>
+<body style="height: 100%; margin: 0;">
+ <script type="text/javascript">
+ function full_screen()
+{
+ // check if user allows full screen of elements. This can be enabled or disabled in browser config. By default its enabled.
+ //its also used to check if browser supports full screen api.
+ if("fullscreenEnabled" in document || "webkitFullscreenEnabled" in document || "mozFullScreenEnabled" in document || "msFullscreenEnabled" in document) 
+ {
+ if(document.fullscreenEnabled || document.webkitFullscreenEnabled || document.mozFullScreenEnabled || document.msFullscreenEnabled)
+ {
+ var element = document.getElementById("myIframe")
+ //requestFullscreen is used to display an element in full screen mode.
+ if("requestFullscreen" in element) 
+ {
+ element.requestFullscreen();
+ } 
+ else if ("webkitRequestFullscreen" in element) 
+ {
+ element.webkitRequestFullscreen();
+ } 
+ else if ("mozRequestFullScreen" in element) 
+ {
+ element.mozRequestFullScreen();
+ } 
+ else if ("msRequestFullscreen" in element) 
+ {
+ element.msRequestFullscreen();
+ }
+ }
+ }
+ else
+ {
+ alert("Y U NO GET FULLSCREEN!?!?!")
+ }
+}
+function iframeDidLoad() {
+ alert("Done");
+}
+	/*
+setInterval(function(){
+document.getElementById("p").innerHTML = "Current Website: "+document.getElementById('myIframe').src
+},1)
+*/
+     document.onkeydown(function(e){
+         if(e.keyCode==113){
+             full_screen();
+         }
+     })
+
+</script>
+ 
+
+<iframe id="myIframe" src="https://www.krunker.io" width="100%" height="100%"></iframe>
+	</body>
+</html>

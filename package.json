@@ -1,0 +1,21 @@
+{
+  "name": "Hackerman-Client",
+  "version": "1.0.0",
+  "description": "Hackerman",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^6.0.12"
+  }
+}
