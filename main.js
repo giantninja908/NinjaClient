@@ -18,7 +18,7 @@ function createWindow () {
 win.setMenuBarVisibility(false);
   win.setAutoHideMenuBar(true);
   // and load the index.html of the app.
-  win.loadURL('https://shellshock.io')
+  win.loadURL('https://krunker.io')
 
   // Open the DevTools.
   win.webContents.openDevTools()
